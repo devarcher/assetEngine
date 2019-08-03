@@ -16,13 +16,7 @@
           box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
 .topBox {
-  width: 100vw;
   height: 94px;
   background-image: linear-gradient(266deg, #2d3657, #14192c);
   display: -webkit-box;
@@ -34,10 +28,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.logo img {
-  margin-left: 40px;
+  padding: 0 45px;
 }
 
 .nav-box {
@@ -58,10 +49,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  width: 30vw;
+  width: 70%;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  list-style: none;
 }
 
 .nav-box .nav-list li {
@@ -74,12 +66,10 @@ body {
 }
 
 .nav-box .user-icon img {
-  margin-right: 40px;
   font-size: 2rem;
 }
 
 .coolStuffGoesHere {
-  width: 100vw;
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,8 +85,7 @@ body {
 }
 
 .bottomBox {
-  width: 100vw;
-  height: 420px;
+  height: 40vh;
   background-color: var(--dark);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,8 +120,11 @@ body {
   padding: 35px;
 }
 
+.bottomBox .leftSide .wrapperLeft .topLeft ul {
+  list-style: none;
+}
+
 .bottomBox .rightSide {
-  width: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,8 +146,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  width: 30%;
+  width: 40vw;
   padding: 35px;
   margin-left: 60px;
+}
+
+.bottomBox .rightSide .wrapperRight .topRight ul {
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,24 +17,14 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
 // Header Wrapper
 .topBox {
-  width: 100vw;
   height: 94px;
   background-image: linear-gradient(266deg, #2d3657, #14192c);
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-//Logo Styling
-.logo img {
-  margin-left: 40px;
+  padding: 0 45px;
 }
 
 //Nav List Position & Styling
@@ -47,7 +37,8 @@ body {
 }
 
 .nav-box .nav-list {
-  width: 30vw;
+  display: flex;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -64,13 +55,11 @@ body {
 
 //User Icon Position & Styling
 .nav-box .user-icon img {
-  margin-right: 40px;
   font-size: 2rem;
 }
 
 // Main Body Place Holder
 .coolStuffGoesHere {
-  width: 100vw;
   height: 90vh;
   display:flex;
   justify-content: center;
@@ -79,7 +68,6 @@ body {
 }
 
 .bottomBox {
-  width: 100vw;
   height: 40vh;
   background-color: var(--dark);
   display: flex;
@@ -107,7 +95,6 @@ body {
 }
 
 .bottomBox .rightSide {
-  width: 50vw;
   display: flex;
   justify-content: flex-start;
 }
@@ -118,7 +105,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 30%;
+  width: 40vw;
   padding: 35px;
   margin-left: 60px;
 }
