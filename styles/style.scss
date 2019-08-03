@@ -1,3 +1,16 @@
+// Global Styles 
+:root {
+  --blue-grey: #7f87ab;
+  --cool-grey: #b5b8c6;
+  --tangerine: #ff9000;
+  --electric-blue: #0052ff;
+  --bright-teal: #00ffd0;
+  --red: #ff0000;
+  --white: #ffffff;
+  --dark: #181d33;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,5 +18,53 @@
 }
 
 body {
-  background: palegoldenrod;
+  width: 100vw;
+  height: 100vh;
 }
+
+// Header Wrapper
+.topBox {
+  width: 100vw;
+  height: 94px;
+  background-image: linear-gradient(266deg, #2d3657, #14192c);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//Logo Styling
+.logo img {
+  margin-left: 40px;
+}
+
+//Nav List Position & Styling
+.nav-box {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-box .nav-list {
+  display: flex;
+  list-style: none;
+  width: 30vw;
+  justify-content: space-around;
+}
+
+.nav-box .nav-list li {
+  color: var(--white);
+}
+
+.nav-box .nav-list li:hover {
+  cursor: pointer;
+  color: var(--cool-grey);
+}
+
+//User Icon Position & Styling
+.nav-box .user-icon img {
+  margin-right: 40px;
+  font-size: 2rem;
+}
+
