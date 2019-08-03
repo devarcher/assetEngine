@@ -47,10 +47,10 @@ body {
 }
 
 .nav-box .nav-list {
-  display: flex;
-  list-style: none;
   width: 30vw;
+  display: flex;
   justify-content: space-around;
+  list-style: none;
 }
 
 .nav-box .nav-list li {
@@ -80,7 +80,7 @@ body {
 
 .bottomBox {
   width: 100vw;
-  height: 420px;
+  height: 40vh;
   background-color: var(--dark);
   display: flex;
 }
@@ -102,6 +102,10 @@ body {
   padding: 35px;
 }
 
+.bottomBox .leftSide .wrapperLeft .topLeft ul {
+  list-style: none;
+}
+
 .bottomBox .rightSide {
   width: 50vw;
   display: flex;
@@ -117,4 +121,8 @@ body {
   width: 30%;
   padding: 35px;
   margin-left: 60px;
+}
+
+.bottomBox .rightSide .wrapperRight .topRight ul {
+  list-style: none;
 }
