@@ -70,7 +70,7 @@
 
 // Footer Section
 .bottomBox {
-  height: 45vh;
+  height: 420px;
   background-color: var(--dark);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -98,12 +98,16 @@
 
 // Left Footer Content Wrapper Position
 .bottomBox .leftSide .wrapperLeft {
-  grid-column: 3 / -7;
+  grid-column: 4 / -7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: 35px;
+}
+
+.bottomBox .leftSide .wrapperLeft .topLeft {
+  height: 55%;
 }
 
 // Left Footer List Styling
@@ -134,12 +138,13 @@
   display: flex;
   justify-content: end;
   width: 100%;
+  margin-left: 25px;
 }
 
 .bottomBox .leftSide .wrapperLeft .icon-group .social-icon {
   width: 20px;
   height: 20px;
-  margin-left: 33px;
+  margin-left: 30px;
   transition: .2s
 }
 
