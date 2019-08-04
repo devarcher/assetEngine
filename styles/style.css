@@ -188,7 +188,6 @@
 }
 
 .bottomBox .rightSide .wrapperRight {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,13 +198,65 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
+  height: 91%;
   width: 40vw;
-  padding: 35px;
   margin-left: 60px;
+  padding-top: 48px;
+}
+
+.bottomBox .rightSide .wrapperRight .topRight {
+  height: 100%;
+}
+
+.bottomBox .rightSide .wrapperRight .topRight h2 {
+  color: var(--white);
 }
 
 .bottomBox .rightSide .wrapperRight .topRight ul {
+  height: 50%;
+  width: 80%;
+  margin-top: 25px;
+  margin-left: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottomBox .rightSide .wrapperRight .topRight li {
+  color: var(--blue-grey);
+  display: inline-block;
   list-style: none;
+  margin: 0 0 16px 1.1225em;
+  /* Give the bullet room on the left hand side */
+  padding: 0;
+  position: relative;
+}
+
+.bottomBox .rightSide .wrapperRight .topRight ul li::before {
+  color: #00ff11;
+  /* color of bullet or square */
+  content: "\2022";
+  /* Unicode of character to precede the list item */
+  display: inline-block;
+  font-size: 2em;
+  /* use em or % */
+  left: -1.1225em;
+  /* use em, line up bullet flush with left hand side */
+  position: absolute;
+  /* Set the bullet positioned absolutely top left */
+  top: -.25em;
+  /* use em or % */
+}
+
+.bottomBox .rightSide .wrapperRight .topRight ul .orange::before {
+  color: #ffcf00;
+}
+
+.bottomBox .rightSide .wrapperRight .copyright {
+  color: var(--white);
 }
 /*# sourceMappingURL=style.css.map */
