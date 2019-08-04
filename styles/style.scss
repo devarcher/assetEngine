@@ -38,7 +38,7 @@
 
 .nav-box .nav-list {
   display: flex;
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -54,8 +54,8 @@
 }
 
 //User Icon Position & Styling
-.nav-box .user-icon img {
-  font-size: 2rem;
+.nav-box .user-icon img:hover {
+  cursor: pointer;
 }
 
 // Main Body Place Holder
@@ -67,38 +67,93 @@
   background-image: linear-gradient(to right, #1f2d65, rgba(60, 100, 255, 0));
 }
 
+
+// Footer Section
 .bottomBox {
   height: 40vh;
   background-color: var(--dark);
   display: flex;
+  position: relative;
 }
 
+.bottomBox hr {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 1px;
+  color: var(--white);
+  opacity: .05;
+  top: 300;
+  left: 0;
+}
+
+// Left Side Footer
 .bottomBox .leftSide {
   width: 50vw;
   background-image: linear-gradient(120deg, #16142c, var(--electric-blue) 50%, var(--bright-teal));
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
 }
 
+// Left Footer Content Wrapper Position
 .bottomBox .leftSide .wrapperLeft {
-  border: 1px solid red;
+  grid-column: 3 / -7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 30%;
   padding: 35px;
 }
 
+// Left Footer List Styling
 .bottomBox .leftSide .wrapperLeft .topLeft ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  padding: 30px;
+  // Left Alignmnet with Asset Engine Icon
+  padding-left: 57px;
 }
 
+.bottomBox .leftSide .wrapperLeft .topLeft li {
+  color: var(--white);
+}
+
+// Left List Hover State
+.bottomBox .leftSide .wrapperLeft .topLeft li:hover {
+  cursor: pointer;
+  color: var(--cool-grey);
+}
+
+// Left Social Media Icons Position and Styling
+.bottomBox .leftSide .wrapperLeft .icon-group {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.bottomBox .leftSide .wrapperLeft .icon-group .social-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 33px;
+  transition: .2s
+}
+
+.bottomBox .leftSide .wrapperLeft .icon-group .social-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+// Right Side Footer
 .bottomBox .rightSide {
   display: flex;
   justify-content: flex-start;
 }
 
+// Right Footer Content Wrapper Positon
 .bottomBox .rightSide .wrapperRight {
   border: 1px solid red;
   display: flex;
@@ -110,6 +165,7 @@
   margin-left: 60px;
 }
 
+// Right Footer List Styling
 .bottomBox .rightSide .wrapperRight .topRight ul {
   list-style: none;
 }

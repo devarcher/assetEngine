@@ -49,7 +49,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 60%;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -65,8 +65,8 @@
   color: var(--cool-grey);
 }
 
-.nav-box .user-icon img {
-  font-size: 2rem;
+.nav-box .user-icon img:hover {
+  cursor: pointer;
 }
 
 .coolStuffGoesHere {
@@ -90,21 +90,31 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+
+.bottomBox hr {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 1px;
+  color: var(--white);
+  opacity: .05;
+  top: 300;
+  left: 0;
 }
 
 .bottomBox .leftSide {
   width: 50vw;
   background-image: linear-gradient(120deg, #16142c, var(--electric-blue) 50%, var(--bright-teal));
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
 }
 
 .bottomBox .leftSide .wrapperLeft {
-  border: 1px solid red;
+  grid-column: 3 / -7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,12 +126,56 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  width: 30%;
   padding: 35px;
 }
 
 .bottomBox .leftSide .wrapperLeft .topLeft ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
+  padding-left: 57px;
+}
+
+.bottomBox .leftSide .wrapperLeft .topLeft li {
+  color: var(--white);
+}
+
+.bottomBox .leftSide .wrapperLeft .topLeft li:hover {
+  cursor: pointer;
+  color: var(--cool-grey);
+}
+
+.bottomBox .leftSide .wrapperLeft .icon-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+}
+
+.bottomBox .leftSide .wrapperLeft .icon-group .social-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 33px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.bottomBox .leftSide .wrapperLeft .icon-group .social-icon:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .bottomBox .rightSide {
