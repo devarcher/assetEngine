@@ -22,6 +22,16 @@
   font-style: normal;
 }
 
+.bg-white {
+  background: #ffffff;
+  color: #181d33;
+}
+
+.bg-dark {
+  background-image: linear-gradient(266deg, #2d3657, #14192c);
+  color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +88,6 @@ body {
 }
 
 .nav-box .nav-list li {
-  color: #ffffff;
   font-size: 15px;
   line-height: 1.33;
 }

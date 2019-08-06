@@ -1,5 +1,11 @@
-// Backgrounds
+@import "../config/config";
 
 .bg {
-   
+  &-white {
+    @include set-background($white)
+  }
+  &-dark {
+      background-image: linear-gradient(266deg, #2d3657, #14192c);
+      color: $white;
+  }
 }

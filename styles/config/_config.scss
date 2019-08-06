@@ -1,0 +1,24 @@
+// Global Styles 
+$blue-grey: #7f87ab;
+$cool-grey: #b5b8c6;
+$tangerine: #ff9000;
+$electric-blue: #0052ff;
+$bright-teal: #00ffd0;
+$red: #ff0000;
+$white: #ffffff;
+$dark: #181d33;
+
+// Set Text Color Based on Background Color
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return $dark;
+  } @else {
+    @return $white;
+  }
+}
+
+// Set Background & Text Color
+@mixin set-background($color) {
+  background: $color;
+  color: set-text-color($color);
+}

@@ -1,16 +1,6 @@
 @import "./fonts/fonts";
-
-
-// Global Styles 
-  $blue-grey: #7f87ab;
-  $cool-grey: #b5b8c6;
-  $tangerine: #ff9000;
-  $electric-blue: #0052ff;
-  $bright-teal: #00ffd0;
-  $red: #ff0000;
-  $white: #ffffff;
-  $dark: #181d33;
-
+@import "./config/config";
+@import "./utilities/utilities";
 
 * {
   margin: 0;
@@ -19,7 +9,7 @@
 }
 
 body {
-  background-image: linear-gradient(266deg, #2d3657, #14192c);
+  background-image: linear-gradient(266deg, #2d3657, #14192c)
 }
 
 // Header Wrapper
@@ -54,7 +44,6 @@ body {
 }
 
 .nav-box .nav-list li {
-  color: $white;
   font-size: 15px;
   line-height: 1.33;
 }
