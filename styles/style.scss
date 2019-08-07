@@ -542,7 +542,7 @@ body {
 
   // Right Footer List Styling
   .bottomBox .rightSide .wrapperRight .topRight ul {
-    height: 50%;
+    height: 100%;
     width: 80%;
     margin-top: 30px;
     margin-left: 14px;
@@ -628,5 +628,6 @@ body {
 
   .bottomBox .rightSide .wrapperRight .copyright {
     color: $white;
+    margin-top: 7px;
   }
 }
