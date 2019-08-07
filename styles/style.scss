@@ -280,13 +280,13 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-    width: 90px;
+    width: 100px;
     margin-right: 5px;
   }
 
-  .right-nav .user-icon img {
-    width: 30px;
-    height: 30px;
+  .user-icon img {
+    width: 35px;
+    height: 35px;
   }
 
   /* Hamburger Menu */
@@ -321,7 +321,7 @@ body {
     position: relative;
     width: 100%;
     height: 2px;
-    background: $dark;
+    background: white;
     transition: all .3s;
   }
 
@@ -331,7 +331,7 @@ body {
     top: -7px;
     width: 100%;
     height: 2px;
-    background: $dark;
+    background: white;
   }
 
   .menu-wrap .hamburger > div::after {
