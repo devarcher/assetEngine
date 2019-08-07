@@ -506,9 +506,9 @@ body {
   // Right Side Footer
   .bottomBox .rightSide {
     display: flex;
-    height: 100%;
     width: 80vw;
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
   .bottomBox .rightSide .topRight {
@@ -522,10 +522,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90%;
-    width: 40vw;
+    width: 80vw;
+    height: 100%;
     margin-left: 35px;
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
   .bottomBox .rightSide .wrapperRight .topRight {
@@ -628,11 +628,5 @@ body {
 
   .bottomBox .rightSide .wrapperRight .copyright {
     color: $white;
-  }
-
-  // Copyright
-  .rightside .wrapperRight .copyright {
-    font-size: 15px;
-    line-height: 1.33;
   }
 }

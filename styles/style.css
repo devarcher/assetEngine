@@ -601,12 +601,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100%;
     width: 80vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 30px;
   }
   .bottomBox .rightSide .topRight {
     display: -webkit-box;
@@ -631,10 +631,10 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 90%;
-    width: 40vw;
+    width: 80vw;
+    height: 100%;
     margin-left: 35px;
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .bottomBox .rightSide .wrapperRight .topRight {
     height: 100%;
@@ -733,10 +733,6 @@ body {
   }
   .bottomBox .rightSide .wrapperRight .copyright {
     color: #ffffff;
-  }
-  .rightside .wrapperRight .copyright {
-    font-size: 15px;
-    line-height: 1.33;
   }
 }
 /*# sourceMappingURL=style.css.map */
