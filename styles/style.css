@@ -518,7 +518,7 @@ body {
     height: 100%;
   }
   .bottomBox .leftSide {
-    height: 33%;
+    height: 45%;
     width: 100%;
     padding: 0px;
     display: -webkit-box;
@@ -596,6 +596,147 @@ body {
     transition: .2s;
     margin-left: 0;
     margin-right: 20px;
+  }
+  .bottomBox .rightSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 80vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottomBox .rightSide .topRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .bottomBox .rightSide .wrapperRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 90%;
+    width: 40vw;
+    margin-left: 35px;
+    padding-top: 50px;
+  }
+  .bottomBox .rightSide .wrapperRight .topRight {
+    height: 100%;
+    width: 80vw;
+  }
+  .bottomBox .rightSide .wrapperRight .topRight h2 {
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: -0.42px;
+    width: 100%;
+  }
+  .bottomBox .rightSide .wrapperRight .topRight ul {
+    height: 50%;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 14px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottomBox .rightSide .wrapperRight .topRight li {
+    color: #7f87ab;
+    font-size: 15px;
+    line-height: 1.33;
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 16px 1.1225em;
+    /* Give the bullet room on the left hand side */
+    padding: 0;
+    position: relative;
+  }
+  .order1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .order5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .order2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .order6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .order3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .order7 {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  .order4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .order8 {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .bottomBox .rightSide .wrapperRight .topRight ul li::before {
+    color: #00ff11;
+    /* color of bullet or square */
+    content: "\2022";
+    /* Unicode of character to precede the list item */
+    display: inline-block;
+    font-size: 2.75em;
+    /* use em or % */
+    left: -.7525em;
+    /* use em, line up bullet flush with left hand side */
+    position: absolute;
+    /* Set the bullet positioned absolutely top left */
+    top: -.46em;
+    /* use em or % */
+  }
+  .bottomBox .rightSide .wrapperRight .topRight ul .orange::before {
+    color: #ffcf00;
+  }
+  .bottomBox .rightSide .wrapperRight .copyright {
+    color: #ffffff;
+  }
+  .rightside .wrapperRight .copyright {
+    font-size: 15px;
+    line-height: 1.33;
   }
 }
 /*# sourceMappingURL=style.css.map */

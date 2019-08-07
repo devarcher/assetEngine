@@ -429,7 +429,7 @@ body {
     opacity: .7;
   }
 
-  // Footer Layout
+  // Footer Layout - Left
   .bottomBox {
     display: flex;
     flex-direction: column;
@@ -437,7 +437,7 @@ body {
   }
 
   .bottomBox .leftSide {
-    height: 33%;
+    height: 45%;
     width: 100%;
     padding: 0px;
     display: flex;
@@ -458,12 +458,14 @@ body {
     justify-content: space-around;
     align-items: flex-start;
   }
-
+  
+  // Top Footer Icon Position Fine Tune
   .bottomBox .leftSide .wrapperLeft .topLeft img {
     margin-bottom: 20px;
     margin-left: 20px;
   }
 
+  // Top Footer Links Positioning
   .bottomBox .leftSide .wrapperLeft .topLeft ul {
     display: flex;
     flex-direction: row;
@@ -482,7 +484,7 @@ body {
     font-weight: 300;
   }
 
-    // Left Social Media Icons Position and Styling
+    // Top Footer Social Media Icons Position and Styling
 
   .bottomBox .leftSide .wrapperLeft .icon-group {
     display: flex;
@@ -498,5 +500,139 @@ body {
     transition: .2s;
     margin-left: 0;
     margin-right: 20px;
+  }
+
+  // Footer Layout Right
+  // Right Side Footer
+  .bottomBox .rightSide {
+    display: flex;
+    height: 100%;
+    width: 80vw;
+    flex-direction: column;
+  }
+
+  .bottomBox .rightSide .topRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  // Right Footer Content Wrapper Positon
+  .bottomBox .rightSide .wrapperRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    width: 40vw;
+    margin-left: 35px;
+    padding-top: 50px;
+  }
+
+  .bottomBox .rightSide .wrapperRight .topRight {
+    height: 100%;
+    width: 80vw;
+  }
+
+  .bottomBox .rightSide .wrapperRight .topRight h2 {
+    color: $white;
+    font-size: 25px;
+    letter-spacing: -0.42px;
+    width: 100%;
+  }
+
+  // Right Footer List Styling
+  .bottomBox .rightSide .wrapperRight .topRight ul {
+    height: 50%;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 14px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottomBox .rightSide .wrapperRight .topRight li {
+    color: $blue-grey;
+    font-size: 15px;
+    line-height: 1.33;
+
+    // Bullet Prep
+    display: inline-block;
+    list-style: none; 
+    margin: 0 0 16px 1.1225em;
+
+    /* Give the bullet room on the left hand side */
+    padding: 0;
+    position: relative;
+  }
+
+  // List Item Order for Mobile with Flex Order
+  .order1 {
+    order: 1;
+  }
+
+  .order5 {
+    order: 5;
+  }
+
+  .order2 {
+    order: 2;
+  }
+
+  .order6 {
+    order: 6;
+  }
+
+  .order3 {
+    order: 3;
+  }
+
+  .order7 {
+    order: 7;
+  }
+
+  .order4 {
+    order: 4;
+  }
+
+  .order8 {
+    order: 8;
+  }
+
+  // Bullet Creation / Stying
+  .bottomBox .rightSide .wrapperRight .topRight ul li::before {
+    color: #00ff11;  
+    /* color of bullet or square */
+
+    content: "\2022"; 
+    /* Unicode of character to precede the list item */
+
+    display: inline-block;
+    font-size: 2.75em; 
+    /* use em or % */
+  
+    left: -.7525em; 
+    /* use em, line up bullet flush with left hand side */
+
+    position: absolute;
+    /* Set the bullet positioned absolutely top left */
+
+    top: -.46em; 
+    /* use em or % */
+  }
+
+  // Orange Bullet
+  .bottomBox .rightSide .wrapperRight .topRight ul .orange::before {
+    color: #ffcf00;  
+  }
+
+  .bottomBox .rightSide .wrapperRight .copyright {
+    color: $white;
+  }
+
+  // Copyright
+  .rightside .wrapperRight .copyright {
+    font-size: 15px;
+    line-height: 1.33;
   }
 }
