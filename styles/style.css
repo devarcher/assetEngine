@@ -535,7 +535,7 @@ body {
   }
   .bottomBox .leftSide .wrapperLeft .topLeft {
     height: 80%;
-    width: 90vw;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -551,6 +551,7 @@ body {
   }
   .bottomBox .leftSide .wrapperLeft .topLeft img {
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   .bottomBox .leftSide .wrapperLeft .topLeft ul {
     display: -webkit-box;
@@ -560,8 +561,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-item-align: center;
         align-self: center;
     -webkit-box-align: end;
@@ -578,20 +580,22 @@ body {
     font-weight: 300;
   }
   .bottomBox .leftSide .wrapperLeft .icon-group {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 80vw;
     height: 20%;
-    margin-left: 30px;
+    margin-left: 0;
   }
   .bottomBox .leftSide .wrapperLeft .icon-group .social-icon {
     width: 20px;
     height: 20px;
-    margin-left: 0px;
     -webkit-transition: .2s;
     transition: .2s;
+    margin-left: 0;
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -452,7 +452,7 @@ body {
 
   .bottomBox .leftSide .wrapperLeft .topLeft {
     height: 80%;
-    width: 90vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -461,12 +461,13 @@ body {
 
   .bottomBox .leftSide .wrapperLeft .topLeft img {
     margin-bottom: 20px;
+    margin-left: 20px;
   }
 
   .bottomBox .leftSide .wrapperLeft .topLeft ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-self: center;
     align-items: flex-end;
     width: 80vw;
@@ -484,19 +485,18 @@ body {
     // Left Social Media Icons Position and Styling
 
   .bottomBox .leftSide .wrapperLeft .icon-group {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    width: 100%;
+    display: flex;
+    align-self: center;
+    width: 80vw;
     height: 20%;
-    margin-left: 30px;
+    margin-left: 0;
   }
 
   .bottomBox .leftSide .wrapperLeft .icon-group .social-icon {
     width: 20px;
     height: 20px;
-    margin-left: 0px;
-    transition: .2s
+    transition: .2s;
+    margin-left: 0;
+    margin-right: 20px;
   }
-
-
 }
