@@ -341,10 +341,10 @@ body {
   /* Toggle Hamburger Lines Animation */
   .menu-wrap .toggler:checked + .hamburger > div {
     transform: rotate(135deg);
-    background: white;
-    opacity: .7;
     position: relative;
     z-index: 2;
+    background: white;
+    opacity: .7;
     transition: .5s;
   }
 
@@ -381,6 +381,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
   }
 
   .menu-wrap .menu > div {
@@ -427,4 +428,75 @@ body {
     color: $white;
     opacity: .7;
   }
+
+  // Footer Layout
+  .bottomBox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .bottomBox .leftSide {
+    height: 33%;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .bottomBox .leftSide .wrapperLeft {
+    padding: 0;
+    margin: 0;
+  }
+
+  .bottomBox .leftSide .wrapperLeft .topLeft {
+    height: 80%;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .bottomBox .leftSide .wrapperLeft .topLeft img {
+    margin-bottom: 20px;
+  }
+
+  .bottomBox .leftSide .wrapperLeft .topLeft ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    align-items: flex-end;
+    width: 80vw;
+    height: 15%;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .bottomBox .leftSide .wrapperLeft .topLeft ul li {
+    font-size: 15px;
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 300;
+  }
+
+    // Left Social Media Icons Position and Styling
+
+  .bottomBox .leftSide .wrapperLeft .icon-group {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    height: 20%;
+    margin-left: 30px;
+  }
+
+  .bottomBox .leftSide .wrapperLeft .icon-group .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+    transition: .2s
+  }
+
+
 }
