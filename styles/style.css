@@ -403,12 +403,19 @@ body {
   .menu-wrap .toggler:checked + .hamburger > div {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
+    background: white;
+    opacity: .7;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .menu-wrap .toggler:checked + .hamburger > div:before,
   .menu-wrap .toggler:checked + .hamburger > div:after {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     top: 0;
+    background: #ffffff;
   }
   /* Show Menu */
   .menu-wrap .toggler:checked ~ .menu {
@@ -442,10 +449,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: -1;
   }
   .menu-wrap .menu > div {
-    background: rgba(217, 160, 91, 0.7);
+    background: #181d33;
     width: 300vw;
     height: 300vh;
     display: -webkit-box;
@@ -465,7 +471,7 @@ body {
   .menu-wrap .menu > div > div {
     padding: 50px;
     border-radius: 5px;
-    background: rgba(77, 53, 38, 0.5);
+    background: #181d33;
     opacity: 0;
     -webkit-transition: opacity .4s ease;
     transition: opacity .4s ease;
@@ -484,16 +490,9 @@ body {
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     text-decoration: none;
-    border: 1px solid var(--coffee);
-    text-align: center;
-    margin: 15px;
-    padding: 5px 25px;
-    background: var(--coffee);
-    border-radius: 5px;
     -webkit-transition: all .2s;
     transition: all .2s;
-    -webkit-box-shadow: -3px 3px 3px 1px rgba(143, 104, 52, 0.418);
-            box-shadow: -3px 3px 3px 1px rgba(143, 104, 52, 0.418);
+    padding: 15px;
   }
   .menu-wrap .menu > div > div > ul > li:hover {
     cursor: pointer;
@@ -501,10 +500,11 @@ body {
             transform: scale(1.1);
   }
   .menu-wrap .menu > div > div > ul > li > a {
-    color: var(--gold);
-    font-family: 'roboto', serif;
     font-size: 1.25em;
     font-weight: 300;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .7;
   }
 }
 /*# sourceMappingURL=style.css.map */
