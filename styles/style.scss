@@ -366,16 +366,17 @@ body {
 
   .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transition-duration: 0.75s;
+    transition-duration: 0.0s;
   }
 
   .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.5s ease;
   }
 
   /* Menu Overlay */
   .menu-wrap .menu {
+    outline: 1px solid red;
     position: fixed;
     top: 0;
     left: 0;
@@ -388,14 +389,14 @@ body {
   }
 
   .menu-wrap .menu > div {
+    outline: 1px solid blue;
     background: $dark;
     width: 300vw;
     height: 300vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
+    transform: scale(1);
   }
 
   .menu-wrap .menu > div > div {
@@ -403,7 +404,6 @@ body {
     border-radius: 5px;
     background: $dark;
     opacity: 0;
-    transition: opacity 0.4s ease;
   }
 
   .menu-wrap .menu > div > div > ul {
