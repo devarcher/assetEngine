@@ -45,7 +45,7 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin-top: 11px;
+  margin-top: 15px;
 }
 
 .nav-box .nav-list li {
@@ -59,6 +59,10 @@ body {
 }
 
 //User Icon Position & Styling
+.nav-box .user-icon img {
+  margin-top: 10px;
+}
+
 .nav-box .user-icon img:hover {
   cursor: pointer;
 }
@@ -648,7 +652,7 @@ body {
 
   /* Header / Navigation */
   .headerBox {
-    padding: 0 25px 0px 25px;
+    padding: 20px 25px 0px 30px;
   }
 
   .headerBox .logo img {
@@ -659,7 +663,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 12px;
     width: 100px;
     margin-left: 5px;
   }
@@ -813,90 +817,89 @@ body {
 
   // Tablet Size Footer Right - Adjusting list item positions
   // Right Side Footer
-.footerBox .rightSide {
-  grid-column: 2 / 3;
-  grid-row: 1 / -1;
-  display: flex;
-  justify-content: flex-start;
-}
+  .footerBox .rightSide {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    display: flex;
+    justify-content: flex-start;
+  }
 
-// Right Footer Content Wrapper Positon
-.footerBox .rightSide .wrapperRight {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 91%;
-  width: 40vw;
-  margin-left: 60px;
-  padding-top: 51px;
-}
+  // Right Footer Content Wrapper Positon
+  .footerBox .rightSide .wrapperRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 91%;
+    width: 40vw;
+    margin-left: 60px;
+    padding-top: 51px;
+  }
 
-.footerBox .rightSide .wrapperRight .topRight {
-  height: 100%;
-}
+  .footerBox .rightSide .wrapperRight .topRight {
+    height: 100%;
+  }
 
-.footerBox .rightSide .wrapperRight .topRight h2 {
-  color: $white;
-  font-size: 25px;
-  letter-spacing: -0.42px;
-}
+  .footerBox .rightSide .wrapperRight .topRight h2 {
+    color: $white;
+    font-size: 25px;
+    letter-spacing: -0.42px;
+  }
 
-// Right Footer List Styling
-.footerBox .rightSide .wrapperRight .topRight ul {
-  height: 50%;
-  width: 80%;
-  margin-top: 30px;
-  margin-left: px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  
-  align-items: center;
-}
+  // Right Footer List Styling
+  .footerBox .rightSide .wrapperRight .topRight ul {
+    height: 50%;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 
-.footerBox .rightSide .wrapperRight .topRight li {
-  color: $blue-grey;
-  font-size: 15px;
-  line-height: 1.33;
+    align-items: center;
+  }
 
-  // Bullet Prep
-  display: inline-block;
-  list-style: none;
-  margin: 0 0 16px 1.1225em;
+  .footerBox .rightSide .wrapperRight .topRight li {
+    color: $blue-grey;
+    font-size: 15px;
+    line-height: 1.33;
 
-  /* Give the bullet room on the left hand side */
-  padding: 0;
-  position: relative;
-}
+    // Bullet Prep
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 16px 1.1225em;
 
-// Bullet Creation / Stying
-.footerBox .rightSide .wrapperRight .topRight ul li::before {
-  color: #00ff11;
-  /* color of bullet or square */
+    /* Give the bullet room on the left hand side */
+    padding: 0;
+    position: relative;
+  }
 
-  content: "\2022";
-  /* Unicode of character to precede the list item */
+  // Bullet Creation / Stying
+  .footerBox .rightSide .wrapperRight .topRight ul li::before {
+    color: #00ff11;
+    /* color of bullet or square */
 
-  display: inline-block;
-  font-size: 2.75em;
-  /* use em or % */
+    content: "\2022";
+    /* Unicode of character to precede the list item */
 
-  left: -0.7525em;
-  /* use em, line up bullet flush with left hand side */
+    display: inline-block;
+    font-size: 2.75em;
+    /* use em or % */
 
-  position: absolute;
-  /* Set the bullet positioned absolutely top left */
+    left: -0.7525em;
+    /* use em, line up bullet flush with left hand side */
 
-  top: -0.46em;
-  /* use em or % */
-}
+    position: absolute;
+    /* Set the bullet positioned absolutely top left */
 
-// Orange Bullet
-.footerBox .rightSide .wrapperRight .topRight ul .orange::before {
-  color: #ffcf00;
-}
+    top: -0.46em;
+    /* use em or % */
+  }
 
-.footerBox .rightSide .wrapperRight .copyright {
-  color: $white;
-}
+  // Orange Bullet
+  .footerBox .rightSide .wrapperRight .topRight ul .orange::before {
+    color: #ffcf00;
+  }
 
+  .footerBox .rightSide .wrapperRight .copyright {
+    color: $white;
+  }
 }
