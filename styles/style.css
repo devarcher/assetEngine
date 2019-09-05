@@ -248,7 +248,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 91%;
-  width: 50vw;
+  width: 40vw;
   margin-left: 60px;
   padding-top: 51px;
 }
@@ -301,7 +301,7 @@ body {
   /* use em, line up bullet flush with left hand side */
   position: absolute;
   /* Set the bullet positioned absolutely top left */
-  top: -0.465em;
+  top: -0.44em;
   /* use em or % */
 }
 
@@ -923,6 +923,87 @@ body {
     text-decoration: none;
     color: #ffffff;
     opacity: 0.7;
+  }
+  .footerBox .rightSide {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footerBox .rightSide .wrapperRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 91%;
+    width: 40vw;
+    margin-left: 60px;
+    padding-top: 51px;
+  }
+  .footerBox .rightSide .wrapperRight .topRight {
+    height: 100%;
+  }
+  .footerBox .rightSide .wrapperRight .topRight h2 {
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: -0.42px;
+  }
+  .footerBox .rightSide .wrapperRight .topRight ul {
+    height: 50%;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footerBox .rightSide .wrapperRight .topRight li {
+    color: #7f87ab;
+    font-size: 15px;
+    line-height: 1.33;
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 16px 1.1225em;
+    /* Give the bullet room on the left hand side */
+    padding: 0;
+    position: relative;
+  }
+  .footerBox .rightSide .wrapperRight .topRight ul li::before {
+    color: #00ff11;
+    /* color of bullet or square */
+    content: "\2022";
+    /* Unicode of character to precede the list item */
+    display: inline-block;
+    font-size: 2.75em;
+    /* use em or % */
+    left: -0.7525em;
+    /* use em, line up bullet flush with left hand side */
+    position: absolute;
+    /* Set the bullet positioned absolutely top left */
+    top: -0.46em;
+    /* use em or % */
+  }
+  .footerBox .rightSide .wrapperRight .topRight ul .orange::before {
+    color: #ffcf00;
+  }
+  .footerBox .rightSide .wrapperRight .copyright {
+    color: #ffffff;
   }
 }
 /*# sourceMappingURL=style.css.map */
