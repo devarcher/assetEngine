@@ -352,6 +352,7 @@ body {
   .user-icon img {
     width: 35px;
     height: 35px;
+    margin-left: 5px;
   }
   /* Hamburger Menu */
   .menu-wrap {
