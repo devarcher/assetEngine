@@ -58,7 +58,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 45px;
+  padding: 35px 45px 0;
 }
 
 .headerBox .logo img {
@@ -105,7 +105,7 @@ body {
   cursor: pointer;
 }
 
-.coolStuffGoesHere {
+.contentGoesHere {
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,7 +327,7 @@ body {
   }
   /* Header / Navigation */
   .headerBox {
-    padding: 0 15px;
+    padding: 0 15px 0 25px;
   }
   .headerBox .logo img {
     width: 183px;
@@ -426,8 +426,8 @@ body {
   .menu-wrap .toggler:checked ~ .menu > div {
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition-duration: 0.0s;
-            transition-duration: 0.0s;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
   }
   .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
@@ -436,7 +436,6 @@ body {
   }
   /* Menu Overlay */
   .menu-wrap .menu {
-    outline: 1px solid red;
     position: fixed;
     top: 0;
     left: 0;
@@ -454,7 +453,6 @@ body {
     z-index: -1;
   }
   .menu-wrap .menu > div {
-    outline: 1px solid blue;
     background: #181d33;
     width: 300vw;
     height: 300vh;

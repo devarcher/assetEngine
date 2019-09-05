@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 45px;
+  padding: 35px 45px 0;
 }
 
 .headerBox .logo img {
@@ -64,7 +64,7 @@ body {
 }
 
 // Main Body Place Holder
-.coolStuffGoesHere {
+.contentGoesHere {
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -270,7 +270,7 @@ body {
   /* Header / Navigation */
 
   .headerBox {
-    padding: 0 15px;
+    padding: 0 15px 0 25px;
   }
 
   .headerBox .logo img {
@@ -366,7 +366,7 @@ body {
 
   .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transition-duration: 0.0s;
+    transition-duration: 0s;
   }
 
   .menu-wrap .toggler:checked ~ .menu > div > div {
@@ -376,7 +376,6 @@ body {
 
   /* Menu Overlay */
   .menu-wrap .menu {
-    outline: 1px solid red;
     position: fixed;
     top: 0;
     left: 0;
@@ -389,7 +388,6 @@ body {
   }
 
   .menu-wrap .menu > div {
-    outline: 1px solid blue;
     background: $dark;
     width: 300vw;
     height: 300vh;
