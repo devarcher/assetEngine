@@ -371,7 +371,8 @@ body {
 
   .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
-    transition: opacity 0.5s ease;
+    // Opacity transition from Main site to Hamburger Menu
+    transition: opacity 0.75s ease;
   }
 
   /* Menu Overlay */
@@ -402,6 +403,8 @@ body {
     border-radius: 5px;
     background: $dark;
     opacity: 0;
+    // Opacity transition from Hamburger Menu to Main Site
+    transition: opacity 0.25s ease;
   }
 
   .menu-wrap .menu > div > div > ul {
